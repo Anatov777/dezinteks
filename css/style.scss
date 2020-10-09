@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+}
+
+.wrapper {
+  min-height: 708px;
+  width: 100%;
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  // max-width: 1171px;
+  margin: 0 auto;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  // background-color: rgba(255, 255, 255, 0.2);
+  // backdrop-filter: blur(50px);
+  // background: filter(blur(50px));
+  // background: #fff;
+  // filter: blur(50px);
+  // background-image: url("../images/logo.svg");
+
+  width: 308px;
+  height: 80px;
+  padding: 8px 53px;
+  align-self: start;
+  border-radius: 50%;
+  // div {
+  //   background: #fff;
+  //   filter: blur(50px);
+  //   width: 300px;
+  //   height: 80px;
+  // }
+  // img {
+  //   margin-top: -40px;
+  //   z-index: 3;
+  // }
+}
+
+main {
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 68px;
+  text-transform: uppercase;
+  color: #118976;
+  text-shadow: 2px 2px 0px #ffffff;
+  margin: 0;
+  max-width: 656px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  // margin-top: 290px;
+  // margin-left: 50px;
+  margin-top: 15px;
+  .benefits {
+    .benefits__item {
+      display: flex;
+      align-items: center;
+      max-width: 353px;
+      .benefits__text {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        color: #333333;
+        margin-left: 25px;
+      }
+    }
+    .benefits__item + .benefits__item {
+      margin-top: 50px;
+    }
+  }
+  .bottle-img {
+    margin-left: 127px;
+  }
+}
+
+.order-form {
+  max-width: 368px;
+  min-height: 553px;
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  padding: 24px 58px 24px 56px;
+  margin-left: 112px;
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #333333;
+    margin: 0;
+  }
+  .price {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #ff2c2c;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    span {
+      margin-top: 4px;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 38px;
+      line-height: 42px;
+      text-align: center;
+      color: #ff2c2c;
+    }
+  }
+  select {
+    margin-top: 88px;
+    width: 100%;
+    border: 1px solid #089c84;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 15px 20px 16px 20px;
+    appearance: none;
+    background-image: url(../images/down.svg);
+    background-repeat: no-repeat;
+    background-position: right 20px top 50%;
+    border: 1px solid #089c84;
+    border-radius: 2px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 116.75%;
+    color: #333333;
+    cursor: pointer;
+  }
+  input {
+    margin-top: 12px;
+    width: 100%;
+    border: 1px solid #089c84;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 15px 20px 16px 20px;
+    border: 1px solid #089c84;
+    border-radius: 2px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 116.75%;
+    color: #333333;
+  }
+  button {
+    margin-top: 21px;
+    background: #ff272b;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    width: 254px;
+    min-height: 56px;
+    border: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .note {
+    margin-top: 16px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #828282;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1295px) {
+  .container {
+    // flex-direction: row;
+  }
+  .benefits {
+    margin-top: 170px;
+  }
+  .bottle-img {
+    margin-top: 170px;
+  }
+}
